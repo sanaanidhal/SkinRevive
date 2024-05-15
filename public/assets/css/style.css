@@ -5,8 +5,6 @@ html {
 }
 
 body {
-    background-color: #6b6c40;
-    height: 250vh;
     margin-top: 10vh;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -18,7 +16,7 @@ body {
     align-items: center;
     color: white;
     padding: 5vh 5vw 5vh 5vw;
-
+    background-color: #6b6c40;
 }
 
 #navbar .container .title{
@@ -60,34 +58,35 @@ body {
 }
 
 #hero .container{
-    height: 200vh;
+    height: 170vh;
     padding: 0 5vw 0 5vw;
+    background-color: #6b6c40;
+
 }
 #hero .container .background{
-    background-image:
- url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L2FpZ2VuZXJhdGVkLTI0MDcyMy1yYXdwaXhlbF9vZmZpY2VfMTBfY2xvc2VfdXBfYWVzdGhldGljX2JsYWNrX3dvbWVuX3dpdGhfb3JnYW5pY19fZTE0YWU5ZmEtY2NiMi00YzFjLTk4YTQtYzhjMDAwYWNkNWRmLWhxLXNjYWxlLTVfMDB4LmpwZw.jpg");
- background-size: cover;
+    background-image:url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L2FpZ2VuZXJhdGVkLTI0MDcyMy1yYXdwaXhlbF9vZmZpY2VfMTBfY2xvc2VfdXBfYWVzdGhldGljX2JsYWNrX3dvbWVuX3dpdGhfb3JnYW5pY19fZTE0YWU5ZmEtY2NiMi00YzFjLTk4YTQtYzhjMDAwYWNkNWRmLWhxLXNjYWxlLTVfMDB4LmpwZw.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     height: 73vh;
-    border-radius:100% 37% 100% 35% / 100% 39% 100% 35% ;
+    border-radius:100% 37% 100% 35% / 100% 37% 100% 35% ;
     position:relative;
     left: 0%;
-    bottom: 60%;
-    }
-    #hero .container .background .line{
+    bottom: 75%;
+}
+#hero .container .background .line{
        background-color: transparent;
        border: 1px solid white;
         height: 73vh;
-        border-radius:100% 37% 100% 35% / 100% 39% 100% 35% ;
+        border-radius:100% 37% 100% 35% / 100% 37% 100% 35% ;
         position:relative;
         right: 1%;
-        Top: 5%;
-        }
+        Top: 8%;
+}
 
 #hero .container .content{
     z-index: 100;
     display: grid;
-    grid-template-rows: 103vh 25vh 20vh;
+    grid-template-rows: 103vh 25vh ;
     grid-template-columns: 5fr 2fr;
     position: relative;
 }
@@ -106,7 +105,7 @@ body {
     font-style: normal;
     font-size: 18px;
     color: white;
-    margin: 0 0 5vh 0;
+    margin: 0 0 5vh 3vw;
 }
 #hero .container .content .button {
     
@@ -114,7 +113,7 @@ body {
         font-family: "Teachers", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 500;
         color: white;
         text-decoration: none;
@@ -122,10 +121,176 @@ body {
         padding: 15px 35px;
         border-radius: 30px;
         transition: .4s;
-
-    
+        margin: 0 0 5vh 3vw;    
 }
 #hero .container .content .button:hover{
     background-color: white;
     color: black;
 }
+#hero .container .feature-container{
+    display: flex;
+    margin-top: 8vh;
+}
+#hero .container .feature-container .feature{
+    width:20vw;
+}
+#hero .container .feature-container .feature span{
+    color: white;
+    font-size: 26px;
+}
+#hero .container .feature-container .feature h2{
+    color: white;
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  font-style: normal;
+  margin-bottom: 0;
+}
+#hero .container .feature-container .feature p{
+    color: #baba9f;
+    font-size: 12px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 330;
+    line-height: 20px;
+}
+
+#product .container{
+    height: 140vh;
+    background-color: #f4f4f4;
+    padding: 0 5vw 0 5vw;
+}
+#product .container .header {
+    padding: 15vh 20vw 0 20vw;
+}
+#product .container .header .title{
+    font-family: "Italiana", sans-serif;
+    font-weight: 570;
+    font-style: normal;
+    font-size: 65px;
+}
+#product .container .header p{
+    width: 65%;
+    margin: 15px 0 0 0 ;
+    color: #a2a2a2;
+    font-size: 14px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 330;
+    line-height: 25px;
+}
+#product .container  .products{
+    margin: 7vh 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+#product .container  .products a{
+        background-color: #e8e9e3;
+        text-decoration: none;
+        border: 1.5px solid #878570;
+        padding: 30vh 9vw;
+        border-radius: 150px;
+        transition: .4s;
+}
+#product .container  .prices{
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 330;
+
+}
+#product .container  .names{
+    margin: 4vh 0 0 0;
+    display: flex;
+    justify-content:space-between;
+    font-size: 22px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 330;
+}
+#product .container  .names div{
+    width: 18vw;
+    text-align: center;
+}
+#product .container  .prices div{
+    width: 18vw;
+    text-align: center;
+}
+ 
+#discount .container{
+    height: 170vh;
+    padding: 0 5vw 0 5vw;
+    background-color: #6b6c40;
+
+}
+#discount .container .background{
+    background-image:url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L2FpZ2VuZXJhdGVkLTI0MDcyMy1yYXdwaXhlbF9vZmZpY2VfMTBfY2xvc2VfdXBfYWVzdGhldGljX2JsYWNrX3dvbWVuX3dpdGhfb3JnYW5pY19fZTE0YWU5ZmEtY2NiMi00YzFjLTk4YTQtYzhjMDAwYWNkNWRmLWhxLXNjYWxlLTVfMDB4LmpwZw.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 73vh;
+    border-radius:100% 37% 100% 35% / 100% 37% 100% 35% ;
+    position:relative;
+    left: 0%;
+    bottom: 50%;
+}
+#discount .container .background .line{
+       background-color: transparent;
+       border: 1px solid white;
+        height: 73vh;
+        border-radius:100% 37% 100% 35% / 100% 37% 100% 35% ;
+        position:relative;
+        right: 1%;
+        Top: 8%;
+}
+
+#discount .container .content{
+    z-index: 100;
+    display: grid;
+    grid-template-rows: 103vh 25vh ;
+    grid-template-columns: 5fr 2fr;
+    position: relative;
+}
+#discount .container .content div .top{
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    color:#fffffb;
+    width: 65vw;
+    margin: 10vh 0 0 0;
+}
+#discount .container .content div .mid{
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    margin: 0 0 5vh 3vw;
+}
+#discount .container .content .button {
+    
+        background-color: transparent;
+        font-family: "Teachers", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 13px;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        border: 2px solid white;
+        padding: 15px 35px;
+        border-radius: 30px;
+        transition: .4s;
+        margin: 0 0 5vh 3vw;    
+}
+#discount .container .content .button:hover{
+    background-color: white;
+    color: black;
+}
+
