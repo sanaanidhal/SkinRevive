@@ -24,7 +24,7 @@
 
 <body>
     <!-- *****  Navbar  *****-->
-    <div id="navbar">
+    <section id="navbar">
         <div class='container'>
             <div class="title">S k i n R e v i v e.</div>
             <div class="nav">
@@ -34,15 +34,16 @@
                 <div><a href="#">Store</a></div>
             </div>
             <div class="icons">
-                <div><i class="fa-solid fa-magnifying-glass"></i></div>
-                <div><i class="fa-regular fa-user"></i></div>
-                <div><i class="fa-solid fa-bag-shopping"></i></div>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- *****  Hero section  ***** -->
-    <div id='hero'>
+    <section id='hero'>
         <div class="container">
             <div class="content">
                 <div>
@@ -92,9 +93,9 @@
             </div>
 
         </div>
-    </div>
+    </section>
         <!-- *****  product section  ***** -->
-        <div id='product'>
+        <section id='product'>
             <div class="container">
                 <div class="header">
                     <div style='display:flex;'><div class="title">Beauty Care Product</div>
@@ -121,9 +122,9 @@
                     <div>$8.99</div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- *****  discount section  ***** -->
-        <div id='discount'>
+        <section id='discount'>
             <div class="container">
                 <div class="content">
                     <div>
@@ -148,10 +149,33 @@
     
                 <div class="background">
                     <div class='line'></div>
+                    <div class="sale">
+                        <i class="fa-solid fa-certificate"></i>
+                        <div class="text-container">
+                            <p style="font-size:13px;">Up To</p>
+                            <p style="font-size:40px;">20%</p>
+                            <p>Discount</p>
+                        </div>
+                    </div>
                 </div>
     
             </div>
-        </div>
+        </section>
+
+        <section id="stats">
+            <div class="container">
+            <div class="background"></div>
+            <div class="grid">
+                <div class="header">
+                    Natural Ingredients, Visible Results
+                </div>
+                <div class="slider"></div>
+                <div class="description"></div>
+                <div class="stats"></div>
+            </div>
+            </div>
+
+        </section>
 
 
 

@@ -8,6 +8,8 @@ body {
     margin-top: 10vh;
     margin-left: 5vw;
     margin-right: 5vw;
+    overflow-x: hidden;
+    overflow-y:scroll;
 }
 
 #navbar .container{
@@ -46,14 +48,22 @@ body {
     align-items: center;
     width: 15vw;
 }
-#navbar .container .icons div{
+#navbar .container .icons a{
     border-radius: 50px;
     width:3em;
     height:3em;
-    background-color: #eedbcc;
+    background-color: transparent;
+    border: 2px solid white;
     text-align: center;    
 }
-#navbar .container .icons div i{
+#navbar .container .icons a:hover{
+    border-radius: 50px;
+    width:3em;
+    height:3em;
+    background-color: #3d332a;
+    text-align: center;    
+}
+#navbar .container .icons a i{
     padding-top: 1em;
 }
 
@@ -79,10 +89,9 @@ body {
         height: 73vh;
         border-radius:100% 37% 100% 35% / 100% 37% 100% 35% ;
         position:relative;
-        right: 1%;
-        Top: 8%;
+       
+        transform: rotate(350deg);
 }
-
 #hero .container .content{
     z-index: 100;
     display: grid;
@@ -159,7 +168,7 @@ body {
 #product .container{
     height: 140vh;
     background-color: #f4f4f4;
-    padding: 0 5vw 0 5vw;
+    padding: 0 5vw 0 5vw;   
 }
 #product .container .header {
     padding: 15vh 20vw 0 20vw;
@@ -224,20 +233,21 @@ body {
 }
  
 #discount .container{
-    height: 170vh;
+    height: 150vh;
     padding: 0 5vw 0 5vw;
-    background-color: #6b6c40;
+    background-color: #8F8F59;
 
 }
 #discount .container .background{
-    background-image:url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L2FpZ2VuZXJhdGVkLTI0MDcyMy1yYXdwaXhlbF9vZmZpY2VfMTBfY2xvc2VfdXBfYWVzdGhldGljX2JsYWNrX3dvbWVuX3dpdGhfb3JnYW5pY19fZTE0YWU5ZmEtY2NiMi00YzFjLTk4YTQtYzhjMDAwYWNkNWRmLWhxLXNjYWxlLTVfMDB4LmpwZw.jpg");
+    background-image:url("https://cosibella.com.ua/rus_pl_Basiclab-UVLAZHNIAIUSHCHII-KREM-DLIA-RUK-75ml-2041_6.webp");
     background-size: cover;
     background-repeat: no-repeat;
     height: 73vh;
     border-radius:100% 37% 100% 35% / 100% 37% 100% 35% ;
     position:relative;
     left: 0%;
-    bottom: 50%;
+    bottom: 60%;
+    transform: rotate(340deg);
 }
 #discount .container .background .line{
        background-color: transparent;
@@ -245,10 +255,40 @@ body {
         height: 73vh;
         border-radius:100% 37% 100% 35% / 100% 37% 100% 35% ;
         position:relative;
-        right: 1%;
-        Top: 8%;
+        transform: rotate(350deg);
 }
-
+#discount .container .background .sale{
+    position: relative;
+    bottom: 100%;
+    left: 7%;
+    width: 15vw;
+    height: 30vh;
+}
+#discount .container .background .sale i{
+    position: relative;
+    color: white;
+    font-size: 12rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#discount .container .background .sale .text-container {
+    position: absolute;
+    top: 46%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
+}
+#discount .container .background .sale .text-container p{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
 #discount .container .content{
     z-index: 100;
     display: grid;
@@ -262,7 +302,7 @@ body {
     font-style: normal;
     font-size: 70px;
     color:#fffffb;
-    width: 65vw;
+    width: 50vw;
     margin: 10vh 0 0 0;
 }
 #discount .container .content div .mid{
@@ -271,7 +311,8 @@ body {
     font-style: normal;
     font-size: 18px;
     color: white;
-    margin: 0 0 5vh 3vw;
+    margin: 5vh 0 5vh 3vw;
+    
 }
 #discount .container .content .button {
     
@@ -294,3 +335,30 @@ body {
     color: black;
 }
 
+#stats .container {
+    height: 140vh;
+    background-color: #6c6c40;
+    padding: 0 5vw 0 5vw;
+}
+#stats .container .grid{
+    display: grid;
+    position: relative;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 110vh 30vh;
+    z-index: 100;
+}
+#stats .container .grid .header {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 65px;
+    color:#fffffb;
+    width: 50vw;
+    padding: 15vh 0 0 0;
+}
+#stats .container .background {
+   background-color: black;
+   border-radius:100% 37% 100% 35% / 100% 37% 100% 35% ;
+   position: relative;
+   height:60vh;
+}
